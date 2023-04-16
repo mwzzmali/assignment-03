@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Genres Search</title>
+    <script src="./app.js" defer></script>
+</head>
+<body>
+
+  <h1 style = "
+  display: flex;
+  justify-content: center;">MOVIE RECOMMENDATION APP</h1>
+  <div style = "margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;">
+  <div style=" display: flex;
+  flex-direction: column;">
+     <label for="yearDropdown" style = "color:rgb(166, 166, 166);">Year:</label>
+     <select id="yearDropdown"style="width: 300px;"></select></div>
+     <div style=" display: flex;
+     flex-direction: column;">
+   <label for="languageDropdown" style = "color:rgb(166, 166, 166);">Language:</label>
+   <select id="languageDropdown" style="width: 300px;"></select>
+  </div>
+  <div style=" display: flex;
+  flex-direction: column;">
+    <label for="genresDropdown" style = "color:rgb(166, 166, 166);">Genres:</label>
+    <select id="genresDropdown"style="width: 300px;"></select>
+
+  </div>
+
+
+   
+
+  
+</div >
+<div style = "
+display: flex;
+flex-direction: column;
+align-items: center;
+">
+ 
+    <label for="ratingsDropdown" style = "color:rgb(166, 166, 166);">Ratings:</label>
+  <select id="ratingsDropdown"style="width: 100%;"></select>
+  
+</div>
+<button id="searchBtn" hidden></button>
+  <table style="            
+  width: 100%;
+  border-collapse: collapse;" >
+    <t_head >
+     
+      <tr style = "margin-top: 30px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      border-left: none;
+      color:rgb(166, 166, 166);" >
+        <th>Ranking</th>
+        <th>Movie Name</th>
+        <th>Year</th>
+      </tr>
+    </t_head>
+    <tbody id="tableBody">
+      <!-- Filtered movie results will be displayed here -->
+    </tbody>
+  </table>
+</body>
+</html>
