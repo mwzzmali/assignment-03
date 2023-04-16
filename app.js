@@ -1,8 +1,9 @@
 fetch('https://mwzzmali.github.io/assignment-03/data.json')
-  .then(response => response.json())
+   .then(response => response.json())
   .then(data => {
    
     const myArray = data;
+    // console.log(myArray)
 
     
     const yearDropdown = document.getElementById('yearDropdown');
@@ -205,34 +206,47 @@ fetch('https://mwzzmali.github.io/assignment-03/data.json')
 
           const formattedDuration = `${hours} h ${minutes}m`;
          
-          tableHTML += `<tr style = "margin-top: 30px;
-                          margin-bottom: 30px;
+          tableHTML += `<tr style = "
+                          
                           display: flex;
                           flex-direction: row;
-                          justify-content: space-between;">
-                          <td>${index+1}</td>
+                          align-items: center;
+                          box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.2),
+                          0px -10px 10px -10px rgba(0, 0, 0, 0.2);">
+                          <td style = "width: 100px;">${index+1}</td>
                       
                          
                           <td  style = "
                           display: flex;
-                          flex-direction: row;"> 
+                          flex-direction: row;
+                          width: 1200px;
+                          padding-bottom: 10px;
+                          "> 
                           
-                          <img src="${imagePath}" alt="Example Image" style= "width: 100px; height: 100px;">
+                          <img src="${imagePath}" alt="Example Image" style= "width: 80px; height: 100px;">
                           <span style = "
                           display: flex;
                           flex-direction: column;
-                          margin-top: auto;">
+                          margin-top: auto;
+                          margin-bottom: 15px;
+                          margin-left: 15px;
+                          ">
                           
-                          <span style="font-weight: bold; color: blue;">${obj.title}</span>
+                          <span style="font-weight: bold; color: rgb(37, 150, 190);
+                          padding-bottom: 8px;">${obj.title}</span>
                           <span style = "
                           display: flex;
                           flex-direction: row;
+                          color: rgb(153,153,153,255);
+                          font-size: 16px;
                           ">
                          
-                          <span style=" box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-                          color:rgb(166, 166, 166);
-                          
-                           margin-right: 2px;">${obj.certification}</span>
+                          <span style="
+                          border: 1px solid;
+                          border-radius: 2px;
+                          padding-left: 5px;
+                          padding-right: 5px;
+                           margin-right: 10px;">${obj.certification}</span>
                           ${obj.genres}.
                           ${formattedDuration}
                           </span>
@@ -241,7 +255,10 @@ fetch('https://mwzzmali.github.io/assignment-03/data.json')
                          
                           </td>
                          
-                           <td>${year1}</td>
+                           <td style = "
+                           width: 100px;
+                           text-align: center;
+                           ">${year1}</td>
                         </tr>`;
         });
         tableBody.innerHTML = tableHTML;
