@@ -1,4 +1,4 @@
-fetch('data.json')
+fetch('https://mwzzmali.github.io/assignment-03/data.json')
   .then(response => response.json())
   .then(data => {
    
