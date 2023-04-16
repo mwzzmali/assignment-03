@@ -2,29 +2,34 @@
 <html>
 <head>
     <title>Movie Genres Search</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <script src="./app.js" defer></script>
 </head>
-<body>
+<body style="font-family: 'Roboto', sans-serif;">
 
   <h1 style = "
   display: flex;
+  
   justify-content: center;">MOVIE RECOMMENDATION APP</h1>
   <div style = "margin-top: 30px;
   display: flex;
   flex-direction: row;
+  
   justify-content: space-between;">
   <div style=" display: flex;
   flex-direction: column;">
-     <label for="yearDropdown" style = "color:rgb(166, 166, 166);">Year:</label>
+     <label for="yearDropdown" style = "color: rgb(153,153,153,255);">YEAR:</label>
      <select id="yearDropdown"style="width: 300px;"></select></div>
      <div style=" display: flex;
      flex-direction: column;">
-   <label for="languageDropdown" style = "color:rgb(166, 166, 166);">Language:</label>
+   <label for="languageDropdown" style = "color: rgb(153,153,153,255);">LANGUAGE:</label>
    <select id="languageDropdown" style="width: 300px;"></select>
   </div>
   <div style=" display: flex;
   flex-direction: column;">
-    <label for="genresDropdown" style = "color:rgb(166, 166, 166);">Genres:</label>
+    <label for="genresDropdown" style = "color: rgb(153,153,153,255);">GENRES:</label>
     <select id="genresDropdown"style="width: 300px;"></select>
 
   </div>
@@ -37,10 +42,10 @@
 <div style = "
 display: flex;
 flex-direction: column;
-align-items: center;
+align-items: left;
 ">
  
-    <label for="ratingsDropdown" style = "color:rgb(166, 166, 166);">Ratings:</label>
+    <label for="ratingsDropdown" style = "color: rgb(153,153,153,255);">RATINGS</label>
   <select id="ratingsDropdown"style="width: 100%;"></select>
   
 </div>
@@ -53,14 +58,23 @@ align-items: center;
       <tr style = "margin-top: 30px;
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+      
+      box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.5),
+              0px -10px 10px -10px rgba(0, 0, 0, 0.5);
       padding: 10px;
       border-left: none;
-      color:rgb(166, 166, 166);" >
-        <th>Ranking</th>
-        <th>Movie Name</th>
-        <th>Year</th>
+      color:rgb(153,153,153,255);" >
+        <th style = "width: 100px;
+        text-align: left;">RANK</th>
+        <th style="
+        width: 1200px;
+        
+        text-align: left;
+        ">MOVIE</th>
+        <th style = "width: 100px;
+        
+        
+       ">YEAR</th>
       </tr>
     </t_head>
     <tbody id="tableBody">
